@@ -1,4 +1,4 @@
-MODEL_ID = "inceptionv3_joint_position_multimodal_v1"
+MODEL_ID = "multimodal_v1"
 JOINT_TYPES = ("Knee", "Knuckle", "Wrist", "Ankle", "Toe", "Elbow")
 JOINT_ALIASES = dict(zip(("膝关节", "指关节", "腕关节", "踝关节", "趾关节", "肘关节"), JOINT_TYPES))
 MAX_INSTANCES = 50
