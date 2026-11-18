@@ -1,0 +1,39 @@
+{
+  "patient_id": "REPLACE_WITH_ID",
+  "images": [
+    {
+      "path": "inputs/image.png",
+      "joint": "腕关节"
+    }
+  ],
+  "masks": [
+    {
+      "path": "inputs/mask.png"
+    }
+  ],
+  "clinical": {
+    "性别": null,
+    "年龄": null,
+    "血沉（mm）": null,
+    "C反应蛋白": null,
+    "类风湿因子": null,
+    "类风关抗体谱": null,
+    "抗角蛋白抗体（AKA）": null,
+    "抗环瓜氨酸肽抗体（CCP）": null,
+    "抗RA33抗体(RA33)": null,
+    "抗核抗体测定(ANA)": null,
+    "抗Ro52抗体": null,
+    "抗SSA/Ro60": null,
+    "抗组蛋白抗体": null,
+    "抗着丝点抗体": null,
+    "抗核小体抗体": null,
+    "RNP/sm(nRNP)": null,
+    "抗内皮细胞抗体（AECA）": null,
+    "抗中性粒细胞浆抗体（pANCA）": null,
+    "免疫球蛋白IgG": null,
+    "免疫球蛋白IgA": null,
+    "免疫球蛋白IgM": null,
+    "补体C3": null,
+    "补体C4": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model_id": "multimodal_v1",
+  "format": "onnx",
+  "directory": "models",
+  "download_url": "https://pan.baidu.com/s/5fw4WoWDQetc2hS4LvNa7zQ?#list/path=%2FRA-treatment-response-prediction%2Fonnx_deployment",
+  "extraction_code_required": false,
+  "sha256": {
+    "fold_1.onnx": "32e3aa5b87f3c7ec3e1a191e1288cdfe0095735beb1512d0414d4577a0976285",
+    "fold_2.onnx": "ff8c9baee3579048cf2b7c74683e3d8e2f6ebf19a98376b97439a7adeaa49c04",
+    "fold_3.onnx": "866a06f347801f0c9ca77477757b662a8760f0498b7432cd9f3f167663b5b9bb",
+    "fold_4.onnx": "0a7adb54a7e5e2b5442dd4faa54edf56d6f2704a11c29bbdd638fb262c435db4",
+    "fold_5.onnx": "2e0735e5a41c8cb5949262cd17e23a1280ec9910a7fbe7218d92284ef6cf727b"
+  }
+}
