@@ -179,7 +179,13 @@ def predict_patient(patient, schema, scalers, device="cuda", threshold=0.5,
 
     N = len(img_tensors)
     feeds = dict(images=np.stack(img_tensors)[None].astype(np.float32), radios=np.stack(radio_vecs)[None].astype(np.float32), clinical=clinical_vec[None], mask=np.zeros((1,N),dtype=bool), joint_indices=joint_indices)
-    providers = [('CUDAExecutionProvider', {'use_tf32': '0'}), 'CPUExecutionProvider'] if device == 'cuda' else ['CPUExecutionProvider']
+    providers = ['CPUExecutionProvider']
+    if device == 'cuda':
+        # Each fold session runs once, so exhaustive cuDNN tuning cannot pay off.
+        providers.insert(0, ('CUDAExecutionProvider', {
+            'use_tf32': '0',
+            'cudnn_conv_algo_search': 'HEURISTIC',
+        }))
     if device == 'cuda' and 'CUDAExecutionProvider' not in ort.get_available_providers():
         raise RuntimeError('CUDAExecutionProvider unavailable')
     fold_probs=[]
